@@ -1,9 +1,9 @@
-body {
-    display: table;
+.section {
+    
     height: 100%;
     width: 100%;
     position: relative;
-    background: url(../Images/BackGround.jpg) ;
+    background: url(/app/assets/Images/BackGround.jpg) ;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
