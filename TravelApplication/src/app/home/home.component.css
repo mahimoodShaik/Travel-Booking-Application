@@ -1,15 +1,22 @@
-.section {
-    
-    height: 100%;
-    width: 100%;
-    position: relative;
-    background: url(/Images/BackGround.jpg) ;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px; 
+  font-size: 50px;
 }
-p {
-    margin: .67em 0;
-    font-size: 2em;
-  }
+.top-left,.p{
+  font-size: 50px;
+  color: rgba(3, 61, 63, 0.856);
+}
+.centered {
+  position: absolute;
+  top: 80%;
+  left: 48%;
+  text-align: center;
+  font-size: 30px;
+  transform: translate(-50%, -50%);
+}
+.centered,.p{
+  font-size: 40px;
+  color: rgba(3, 61, 63, 0.856);
+}
