@@ -1,0 +1,27 @@
+.container,img{
+    height: 50%;
+    width: 100%;
+    margin: 10 auto;
+  }
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px; 
+    font-size: 50px;
+  }
+  .top-left,.p{
+    font-size: 50px;
+    color: rgba(87, 154, 156, 0.685);
+  }
+  .centered {
+    position: absolute;
+    top: 80%;
+    left: 48%;
+    text-align: center;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+  }
+  .centered,.p{
+    font-size: 40px;
+    color: rgba(86, 123, 124, 0.678);
+  }
