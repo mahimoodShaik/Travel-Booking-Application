@@ -4,12 +4,14 @@ import { HomeComponent } from './home/home.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { PlacesToVisitComponent } from './places-to-visit/places-to-visit.component';
 
 const routes: Routes = [
  {path:'', component: HomeComponent},
  {path:'SignIn',component:SignInComponent},
  {path:'SignUp',component:SignUpComponent},
- {path:'Forgot Password',component:ForgotPasswordComponent}
+ {path:'Forgot Password',component:ForgotPasswordComponent},
+ {path:'places-to-visit',component:PlacesToVisitComponent}
 ];
 
 
