@@ -8,7 +8,6 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { AboutComponent } from './about/about.component';
-import { PlacesToVisitComponent } from './places-to-visit/places-to-visit.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { BookYourTicketsComponent } from './book-your-tickets/book-your-tickets.component';
 
@@ -21,7 +20,6 @@ import { BookYourTicketsComponent } from './book-your-tickets/book-your-tickets.
     SignInComponent,
     ForgotPasswordComponent,
     AboutComponent,
-    PlacesToVisitComponent,
     ChangePasswordComponent,
     BookYourTicketsComponent
   ],

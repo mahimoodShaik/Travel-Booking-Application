@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-import { PlacesToVisitComponent } from './places-to-visit/places-to-visit.component';
+import { AboutComponent } from './about/about.component';
 import { BookYourTicketsComponent } from './book-your-tickets/book-your-tickets.component';
 
 const routes: Routes = [
@@ -12,7 +12,7 @@ const routes: Routes = [
  {path:'SignIn',component:SignInComponent},
  {path:'SignUp',component:SignUpComponent},
  {path:'Forgot Password',component:ForgotPasswordComponent},
- {path:'places-to-visit',component:PlacesToVisitComponent},
+ {path:'About',component:AboutComponent},
  {path:'book-your-tickets',component:BookYourTicketsComponent}
 ];
 
