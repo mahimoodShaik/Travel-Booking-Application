@@ -10,6 +10,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { AboutComponent } from './about/about.component';
 import { PlacesToVisitComponent } from './places-to-visit/places-to-visit.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import { BookYourTicketsComponent } from './book-your-tickets/book-your-tickets.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
     ForgotPasswordComponent,
     AboutComponent,
     PlacesToVisitComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    BookYourTicketsComponent
   ],
   imports: [
     BrowserModule,

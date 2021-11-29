@@ -1,0 +1,38 @@
+<div class="container">
+    <img src='/assets/Images/Background.jpg' style="width:100%"/>
+    <div class="centered">
+        <form class="reservation">
+            <p>Book-Your-Ticket</p>
+            <div class="elem-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="visitor_name" placeholder="Enter Name" pattern=[A-Z\sa-z]{3,20} required>
+            </div>
+            <div class="elem-group">
+                <label for="email">Your E-mail</label>
+                <input type="email" id="email" name="visitor_email" placeholder="Enter Email" required>
+            </div>
+            <div class="elem-group">
+                <label for="phone">Your Phone</label>
+                <input type="tel" id="phone" name="visitor_phone" placeholder="Enter PhoneNumber" pattern=(\d{10) required>
+            </div>
+            <hr>
+            <div class="elem-group">
+                <label for="adult">Adults</label>
+                <input type="number" id="adult" name="total_adults" placeholder="Enter No Of Adults" min="1" required>
+            </div>
+            <div class="elem-group">
+                <label for="child">Children</label>
+                <input type="number" id="child" name="total_children" placeholder="Enter No Of Children" min="0" required>
+            </div>
+            <div class="elem-group">
+                <label for="checkin-date">Check-in-Date</label>
+                <input type="date" id="check-in-date" name="check-in-date" required>
+            </div>
+            <div class="elem-group">
+                <label for="checkout-date">Check-out-Date</label>
+                <input type="date" id="check-out-date" name="check-out-date" required>
+            </div>
+            <button type="submit" class="btn btn-outline-success">BookYourTicket</button>
+        </form>
+    </div>
+</div>    
