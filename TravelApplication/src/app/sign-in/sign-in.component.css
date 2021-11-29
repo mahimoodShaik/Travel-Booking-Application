@@ -1,17 +1,17 @@
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-  }
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
 .signinform{
-    position: absolute;
-    right: 0;
-    margin: 50px;
-    max-width: 250px;
-    padding: 15px;
-    font-size: 25px;
-    background:transparent;
+  position: absolute;
+  right: 0;
+  margin: 50px;
+  max-width: 250px;
+  padding: 15px;
+  font-size: 25px;
+  background:transparent;
 }
 label{
   width: 200%;
@@ -22,13 +22,13 @@ label{
   size: 10px;   
 }
 input[type=email], input[type=password]{
-    width: 200%;
-    padding: 20px;
-    margin: 10px 5 30px 15;
-    border: none;
-    background:  rgb(184, 216, 214);
-  }
-  input[type=email]:focus, input[type=password]:focus {
-    background-color: #62ddd386;
-    outline: none;
-  }
+  width: 200%;
+  padding: 20px;
+  margin: 10px 5 30px 15;
+  border: none;
+  background:  rgb(184, 216, 214);
+}
+input[type=email]:focus, input[type=password]:focus {
+  background-color: #62ddd386;
+  outline: none;
+}
