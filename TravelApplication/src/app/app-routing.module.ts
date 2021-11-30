@@ -6,16 +6,24 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { AboutComponent } from './about/about.component';
 import { BookYourTicketsComponent } from './book-your-tickets/book-your-tickets.component';
-
+import { TejMahalComponent } from './tej-mahal/tej-mahal.component';
+import { CharminarComponent } from './charminar/charminar.component';
+import { KeralaComponent } from './kerala/kerala.component';
+import { MumbaiComponent } from './mumbai/mumbai.component';
+import { MysorePalaceComponent } from './mysore-palace/mysore-palace.component';
+import { GoaComponent } from './goa/goa.component';
+import { RajasthanComponent } from './rajasthan/rajasthan.component';
+import { IndiaGateComponent } from './india-gate/india-gate.component';
 const routes: Routes = [
  {path:'', component: HomeComponent},
  {path:'SignIn',component:SignInComponent},
  {path:'SignUp',component:SignUpComponent},
  {path:'Forgot Password',component:ForgotPasswordComponent},
  {path:'About',component:AboutComponent},
- {path:'book-your-tickets',component:BookYourTicketsComponent}
+ {path:'book-your-tickets',component:BookYourTicketsComponent},
+ {path:'TejMahal', component:TejMahalComponent},
+ {path:'Charminar', component:CharminarComponent}
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

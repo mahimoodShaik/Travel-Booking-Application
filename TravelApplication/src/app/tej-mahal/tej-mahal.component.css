@@ -1,0 +1,8 @@
+.container{
+    background-color: rgb(119, 177, 165);
+}
+.column {
+    float: left;
+    width: 10000%;
+    padding: 5px;
+  }
