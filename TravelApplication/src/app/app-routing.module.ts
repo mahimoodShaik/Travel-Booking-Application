@@ -22,7 +22,13 @@ const routes: Routes = [
  {path:'About',component:AboutComponent},
  {path:'book-your-tickets',component:BookYourTicketsComponent},
  {path:'TejMahal', component:TejMahalComponent},
- {path:'Charminar', component:CharminarComponent}
+ {path:'Charminar', component:CharminarComponent},
+ {path:'Mumbai', component:MumbaiComponent},
+ {path:'Kerala', component:KeralaComponent},
+ {path:'MysorePalace', component:MysorePalaceComponent},
+ {path:'Goa', component:GoaComponent},
+ {path:'Rajasthan', component:RajasthanComponent},
+ {path:'IndiaGate', component:IndiaGateComponent}
 ];
 
 @NgModule({
