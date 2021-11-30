@@ -18,8 +18,11 @@ p{
   }
   .column2{
     float: left;
-    right: 80%;
+    top:50%;
+    right: 50%;
     width: 48%;
     padding: 50px 5px 5px;
-
+  }
+  .checked {
+    color: rgb(38, 97, 36);
   }

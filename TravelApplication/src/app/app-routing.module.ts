@@ -25,7 +25,7 @@ const routes: Routes = [
  {path:'Charminar', component:CharminarComponent},
  {path:'Mumbai', component:MumbaiComponent},
  {path:'Kerala', component:KeralaComponent},
- {path:'MysorePalace', component:MysorePalaceComponent},
+ {path:'Mysore Palace', component:MysorePalaceComponent},
  {path:'Goa', component:GoaComponent},
  {path:'Rajasthan', component:RajasthanComponent},
  {path:'IndiaGate', component:IndiaGateComponent}
