@@ -2,6 +2,11 @@
   background-color: cadetblue;
   width: 100%;
 }
+p{
+  text-align: center;
+  font-size: xx-large;
+  color: #00311f;
+}
 .column a{
   text-align: center;
   font-size:xx-large;

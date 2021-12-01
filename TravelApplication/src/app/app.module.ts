@@ -18,6 +18,8 @@ import { MysorePalaceComponent } from './mysore-palace/mysore-palace.component';
 import { GoaComponent } from './goa/goa.component';
 import { RajasthanComponent } from './rajasthan/rajasthan.component';
 import { IndiaGateComponent } from './india-gate/india-gate.component';
+import { MainComponent } from './main/main.component';
+import { TicketDetailsComponent } from './ticket-details/ticket-details.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { IndiaGateComponent } from './india-gate/india-gate.component';
     MysorePalaceComponent,
     GoaComponent,
     RajasthanComponent,
-    IndiaGateComponent
+    IndiaGateComponent,
+    MainComponent,
+    TicketDetailsComponent
   ],
   imports: [
     BrowserModule,
