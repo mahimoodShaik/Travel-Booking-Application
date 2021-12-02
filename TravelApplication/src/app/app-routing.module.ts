@@ -19,7 +19,7 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
 import { TicketDetailsComponent } from './ticket-details/ticket-details.component';
 
 const routes: Routes = [
- {path:'', component: HomeComponent},
+ {path:'Home', component: HomeComponent},
  {path:'SignIn',component:SignInComponent},
  {path:'SignUp',component:SignUpComponent},
  {path:'Forgot Password',component:ForgotPasswordComponent},

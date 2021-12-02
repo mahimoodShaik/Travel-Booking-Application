@@ -31,8 +31,9 @@
         <input type="password" placeholder="Enter Confirm Password" name="confirmpassword" (keyup)="onKey($event, 'confirmPassword')">
 
         <h6 *ngIf="!valid.password">Passwords are different!</h6>
-        <button type="submit" class="btn btn-outline-success">SignUp</button>
-            
+
+        <button type="submit"  (click)="signUp()" class="btn btn-primary mt-3">Sign Up</button>
+        
         <p>Already have an account? <a href="/SignIn">Sign in</a>.</p>
     </form>
 </div> 

@@ -11,6 +11,12 @@ import { ApiService } from '../shared/api.service';
 })
 export class SignInComponent implements OnInit {
   
+  constructor(private router: Router) { }
+
   ngOnInit(): void {
+  }
+  SignIn(){
+    alert("SUCCESS");
+    this.router.navigate(['/main']);
   }
 }
