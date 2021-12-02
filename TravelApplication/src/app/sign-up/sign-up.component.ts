@@ -13,6 +13,7 @@ export class SignUpComponent implements OnInit {
   }
   
   public data = {
+    tel:'',
     text : '',
     email : '',
     password : '',
@@ -20,14 +21,17 @@ export class SignUpComponent implements OnInit {
 
   }
   valid = {
+    tel: true,
     text: true,
     email: true,
     password: true,
   };
 
   validate(type: string): void {
-    const usernamePattern = /^[a-zA-Z]+$/;
-    const emailPattern = /\S+@\S+\.\S+/;
+    const usernamePattern = /[A-Z\sa-z]/;
+    const emailPattern = /[a-z0-9._%+-]+@[a-z0-9.-]+.[com]$/;
+    const phonePattern = /^\d{10}$/;
+    const passwordPattern=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
 
     if (type === 'text') {
       if (this.data.text.length < 3) {
@@ -35,8 +39,12 @@ export class SignUpComponent implements OnInit {
       } else {
         this.valid.text = usernamePattern.test(this.data.text);
       }
+    } else if (type === 'tel') {
+      this.valid.tel = phonePattern.test(this.data.tel);
     } else if (type === 'email') {
       this.valid.email = emailPattern.test(this.data.email);
+    }else if (type === 'password') {
+      this.valid.password = passwordPattern.test(this.data.password);
     } else if (type === ('confirmPassword' || 'password')) {
       if (this.data.password === this.data.confirmPassword) {
         this.valid.password = true;
@@ -48,7 +56,9 @@ export class SignUpComponent implements OnInit {
 
   onKey(event: any, type: string) {
     if (type === 'text') {
-      this.data.text = event.target.value;
+      this.data.text = event.target.value;  
+    } else if (type === 'tel') {
+      this.data.tel = event.target.value;
     } else if (type === 'email') {
       this.data.email = event.target.value;
     } else if (type === 'password') {
@@ -58,4 +68,5 @@ export class SignUpComponent implements OnInit {
     }
     this.validate(type);
   }
+  
 }

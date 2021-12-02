@@ -13,6 +13,10 @@
   font-size: 30px;
   background:transparent;
 }
+h6{
+  width: 150%;
+  color: red;
+}
 label{
   width: 200%;
   padding: 20px;
@@ -21,14 +25,14 @@ label{
   color: rgba(77, 11, 11, 0.747);
   size: 10px;   
 }
-input[type=text], input[type=email], input[type=password]{
+input[type=text],input[type=tel], input[type=email], input[type=password]{
   width: 150%;
   padding: 15px;
   margin: 10px 5 30px 15;
   border: none;
   background:  rgb(184, 216, 214);
 }
-input[type=email]:focus, input[type=password]:focus {
+input[type=text]:focus,input[type=tel]:focus,[type=email]:focus, input[type=password]:focus {
   background-color: #62ddd386;
   outline: none;
 }

@@ -9,11 +9,17 @@
             </div>
             <div class="elem-group">
                 <label for="email">Your E-mail</label>
-                <input type="email" id="email" name="visitor_email" placeholder="Enter Email" required>
+                <input type="email" id="email" name="visitor_email" placeholder="Enter Email" (keyup)="onKey($event, 'email')"  required>
+                <h6 *ngIf="!valid.email">
+                    Your email is not correct!
+                </h6>
             </div>
             <div class="elem-group">
                 <label for="phone">Your Phone</label>
-                <input type="tel" id="phone" name="visitor_phone" placeholder="Enter PhoneNumber" pattern=(\d{10}) required>
+                <input type="tel" id="phone" name="visitor_phone" placeholder="Enter PhoneNumber" (keyup)="onKey($event, 'tel')" required>
+                <h6 *ngIf="!valid.tel">
+                    Your PhoneNumber is not Valid!
+                </h6>
             </div>
             <div class="elem-group">
                 <label for="adult">Adults</label>

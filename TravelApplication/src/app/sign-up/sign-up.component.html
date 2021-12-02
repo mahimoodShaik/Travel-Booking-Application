@@ -5,29 +5,32 @@
         <h1>SignUp</h1>
 
         <label for="username"><b>UserName</b></label>
-        <input type="text" placeholder="Enter UserName" name="userName"  pattern=[A-Z\sa-z]{3,20} required>
+        <input type="text" placeholder="Enter UserName" name="userName"  (keyup)="onKey($event, 'text')" required>
+        <h6 *ngIf="!valid.text">
+            Username can consist of letters only and the
+            minimum length is 3!
+        </h6>
 
         <label for="phonenumber"><b>PhoneNumber</b></label>
-        <input type="text" placeholder="Enter PhoneNumber" name="phonenumber"pattern=(\d{10}) required>
-        
-        <label for="gender"><b>Gender</b></label>
-        <input type="text" placeholder="Enter Gender" name="gender" required>
-        
-        <label for="age"><b>Age</b></label>
-        <input type="text" placeholder="Enter Age" name="age" required>
-        
-        <label for="nationality"><b>Nationality</b></label>
-        <input type="text" placeholder="Enter Nationality" name="nationality" required>
-        
-        <label for="email"><b>Email</b></label>
-        <input type="email" placeholder="Enter Email" name="email" pattern="/\S+@\S+\.\S+/" required>
+        <input type="tel" placeholder="Enter PhoneNumber" name="phonenumber" (keyup)="onKey($event, 'tel')" required>
+        <h6 *ngIf="!valid.tel">
+            Your PhoneNumber is not Valid!
+        </h6>
 
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" (keyup)="onKey($event, 'email')"  required>
+        <h6 *ngIf="!valid.email">
+            Your email is not correct!
+        </h6>
         <label for="password"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="password" required>
+        <input type="password" placeholder="Enter Password" name="password" (keyup)="onKey($event, 'password')" required>
+        
+        <h6 *ngIf="!valid.password">Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters</h6>
 
         <label for="confirmpassword"><b>ConfirmPassword</b></label>
-        <input type="password" placeholder="Enter Confirm Password" name="confirmpassword" required>
+        <input type="password" placeholder="Enter Confirm Password" name="confirmpassword" (keyup)="onKey($event, 'confirmPassword')">
 
+        <h6 *ngIf="!valid.password">Passwords are different!</h6>
         <button type="submit" class="btn btn-outline-success">SignUp</button>
             
         <p>Already have an account? <a href="/SignIn">Sign in</a>.</p>
